@@ -1,3 +1,3 @@
 # Slider
 
-[Demo](https://nekrasovanatalya.github.io/Food/)
+[Demo](https://nekrasovanatalya.github.io/Slider/)
