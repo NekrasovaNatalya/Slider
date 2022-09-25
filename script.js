@@ -1,15 +1,22 @@
-const slides = document.querySelectorAll('.slide');
+function sliderPlugin(activeSlide = 2) {
+    const slides = document.querySelectorAll('.slide');
+    slides[activeSlide].classList.add('active');
 
-for (const slide of slides) {
+    for (const slide of slides) {
     slide.addEventListener('click', () => {
         clearActiveClass();
         slide.classList.add('active');
     });
     
-}
+    }
 
-function clearActiveClass() {
+    function clearActiveClass() {
     slides.forEach((slide) => {
         slide.classList.remove('active'); 
     });
+    }
 }
+
+let randomNumber = Math.floor(Math.random() * 5);
+
+sliderPlugin(randomNumber);
